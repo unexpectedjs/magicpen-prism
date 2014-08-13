@@ -1,0 +1,14 @@
+{
+  "name": "unexpected-prism",
+  "version": "0.1.0",
+  "description": "Add syntax highlighting support to unexpected via prism.js",
+  "main": "lib/unexpectedPrism.js",
+  "author": "Andreas Lind Petersen <andreas@one.com>",
+  "devDependencies": {
+    "unexpected": "=4.0.1",
+    "mocha": "=1.21.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
