@@ -6,7 +6,7 @@
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "devDependencies": {
     "unexpected": "=4.0.1",
-    "magicpen": "=0.3.4",
+    "magicpen": "=1.0.0",
     "mocha": "=1.21.4"
   },
   "scripts": {
