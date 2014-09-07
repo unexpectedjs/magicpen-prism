@@ -16,6 +16,14 @@ describe('magicpen-prism', function () {
         );
     });
 
+    it('should format a multiline JavaScript chunk', function () {
+        expect(
+            magicPen.code('var foo = "bar",\n    quux = "baz";', 'javascript').toString(),
+            'to equal',
+            'var foo = "bar",\n    quux = "baz";'
+        );
+    });
+
     it('should not touch an unsupported language', function () {
         expect(
             magicPen.code('var foo = "bar";', 'foobar').toString('ansi'),
