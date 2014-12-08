@@ -10,6 +10,7 @@
     "unexpected": "5.0.0-beta23"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js"
   }
 }
