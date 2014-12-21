@@ -36,7 +36,7 @@ describe('magicpen-prism', function () {
         expect(
             magicPen.code('int main(int argc, char **argv) {}', 'c').toString('ansi'),
             'to equal',
-            'int \u001b[31m\u001b[38;5;204mmain\u001b[39m\u001b[90m\u001b[38;5;247m(\u001b[39mint argc\u001b[90m\u001b[38;5;247m,\u001b[39m char \u001b[90m\u001b[38;5;180m*\u001b[39m\u001b[90m\u001b[38;5;180m*\u001b[39margv\u001b[90m\u001b[38;5;247m)\u001b[39m \u001b[90m\u001b[38;5;247m{\u001b[39m\u001b[90m\u001b[38;5;247m}\u001b[39m'
+            'int \u001b[31m\u001b[38;5;204mmain\u001b[39m\u001b[90m\u001b[38;5;247m(\u001b[39mint argc\u001b[90m\u001b[38;5;247m,\u001b[39m char \u001b[90m\u001b[38;5;180m**\u001b[39margv\u001b[90m\u001b[38;5;247m)\u001b[39m \u001b[90m\u001b[38;5;247m{}\u001b[39m'
         );
     });
 });
