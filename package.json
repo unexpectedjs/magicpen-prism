@@ -5,14 +5,14 @@
   "main": "lib/magicPenPrism.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "peerDependencies": {
-    "magicpen": "^4.0.0"
+    "magicpen": "^4.3.0"
   },
   "devDependencies": {
-    "magicpen": "4.0.0",
+    "browserify": "8.1.1",
+    "bundle-collapser": "1.1.1",
+    "magicpen": "4.3.0",
     "mocha": "1.21.4",
-    "unexpected": "5.0.0-beta36",
-    "browserify": "^5.9.1",
-    "bundle-collapser": "^1.1.0"
+    "unexpected": "5.8.0"
   },
   "scripts": {
     "test": "mocha",
