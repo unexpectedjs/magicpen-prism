@@ -10,12 +10,15 @@
   "devDependencies": {
     "browserify": "8.1.1",
     "bundle-collapser": "1.1.1",
+    "jshint": "2.7.0",
     "magicpen": "4.3.1",
     "mocha": "1.21.4",
     "unexpected": "5.8.0"
   },
   "scripts": {
     "test": "mocha",
+    "lint": "jshint .",
+    "travis": "npm run lint && npm test",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js"
   }
 }
