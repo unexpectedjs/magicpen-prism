@@ -2,6 +2,10 @@
   "name": "magicpen-prism",
   "version": "1.1.1",
   "description": "Add syntax highlighting support to magicpen via prism.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unexpectedjs/magicpen-prism.git"
+  },
   "main": "lib/magicPenPrism.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "peerDependencies": {
