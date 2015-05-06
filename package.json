@@ -1,6 +1,6 @@
 {
   "name": "magicpen-prism",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Add syntax highlighting support to magicpen via prism.js",
   "repository": {
     "type": "git",
