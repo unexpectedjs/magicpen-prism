@@ -19,6 +19,10 @@
     "mocha": "1.21.4",
     "unexpected": "5.8.0"
   },
+  "files": [
+    "lib",
+    "magicPenPrism.min.js"
+  ],
   "scripts": {
     "test": "mocha",
     "lint": "jshint .",
