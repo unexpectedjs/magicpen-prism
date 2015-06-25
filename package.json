@@ -21,7 +21,8 @@
   },
   "files": [
     "lib",
-    "magicPenPrism.min.js"
+    "magicPenPrism.min.js",
+    "3rdparty/prism.js"
   ],
   "scripts": {
     "test": "mocha",
