@@ -9,7 +9,7 @@
   "main": "lib/magicPenPrism.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "peerDependencies": {
-    "magicpen": "^4.3.1"
+    "magicpen": "^4.3.1 || 5"
   },
   "devDependencies": {
     "browserify": "8.1.1",
