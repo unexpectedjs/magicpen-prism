@@ -9,12 +9,12 @@
   "main": "lib/magicPenPrism.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "devDependencies": {
-    "browserify": "8.1.1",
-    "bundle-collapser": "1.1.1",
-    "jshint": "2.7.0",
-    "magicpen": "4.3.1",
-    "mocha": "1.21.4",
-    "unexpected": "5.8.0"
+    "browserify": "13.0.0",
+    "bundle-collapser": "1.2.1",
+    "jshint": "2.9.1",
+    "magicpen": "5.9.0",
+    "mocha": "2.4.5",
+    "unexpected": "10.10.5"
   },
   "files": [
     "lib",
