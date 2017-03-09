@@ -43,6 +43,14 @@ describe('magicpen-prism', function () {
         );
     });
 
+    it('should highlight GraphQL', function () {
+        expect(
+            magicPen.code('{ myQuery(first: 5) { ...on MyPreferredType { isAwesome } } }', 'application/graphql').toString('ansi'),
+            'to equal',
+            '\x1b[90m\x1b[38;5;247m{\x1b[39m myQuery\x1b[90m\x1b[38;5;247m(\x1b[39m\x1b[32m\x1b[38;5;112mfirst\x1b[39m\x1b[90m\x1b[38;5;247m:\x1b[39m \x1b[34m\x1b[38;5;162m5\x1b[39m\x1b[90m\x1b[38;5;247m)\x1b[39m \x1b[90m\x1b[38;5;247m{\x1b[39m \x1b[90m\x1b[38;5;180m...\x1b[39m\x1b[90m\x1b[38;5;74mon\x1b[39m MyPreferredType \x1b[90m\x1b[38;5;247m{\x1b[39m isAwesome \x1b[90m\x1b[38;5;247m}\x1b[39m \x1b[90m\x1b[38;5;247m}\x1b[39m \x1b[90m\x1b[38;5;247m}\x1b[39m'
+        );
+    });
+
     it('should not touch an unsupported language', function () {
         expect(
             magicPen.code('var foo = "bar";', 'foobar').toString('ansi'),
