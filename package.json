@@ -19,13 +19,15 @@
   },
   "files": [
     "lib",
-    "magicPenPrism.min.js",
-    "3rdparty/prism.js"
+    "magicPenPrism.min.js"
   ],
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
     "travis": "npm run lint && npm test",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js"
+  },
+  "dependencies": {
+    "prismjs": "1.6.0"
   }
 }
