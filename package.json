@@ -28,6 +28,7 @@
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js"
   },
   "dependencies": {
-    "prismjs": "1.6.0"
+    "prismjs": "1.6.0",
+    "prismjs-papandreou": "1.6.0-patch2"
   }
 }
