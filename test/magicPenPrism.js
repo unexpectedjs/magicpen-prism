@@ -66,4 +66,12 @@ describe('magicpen-prism', function () {
             'int \u001b[31m\u001b[38;5;204mmain\u001b[39m\u001b[90m\u001b[38;5;247m(\u001b[39mint argc\u001b[90m\u001b[38;5;247m,\u001b[39m char \u001b[90m\u001b[38;5;180m**\u001b[39margv\u001b[90m\u001b[38;5;247m)\u001b[39m \u001b[90m\u001b[38;5;247m{}\u001b[39m'
         );
     });
+
+    it('should highlight a Content-Security-Policy', function () {
+        expect(
+            magicPen.code('script-src \'self\' https://gofish.dk/ \'unsafe-inline\'; default-src \'none\'', 'csp').toString('ansi'),
+            'to equal',
+            '\x1B[90m\x1B[38;5;74mscript-src \x1B[39m\x1B[32m\x1B[38;5;112m\'self\'\x1B[39m https://gofish.dk/ \x1B[31m\x1B[38;5;204m\'unsafe-inline\'\x1B[39m; \x1B[90m\x1B[38;5;74mdefault-src \x1B[39m\x1B[32m\x1B[38;5;112m\'none\'\x1B[39m'
+        );
+    });
 });
