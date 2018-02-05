@@ -28,6 +28,6 @@
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js"
   },
   "dependencies": {
-    "prismjs": "github:papandreou/prism#feature/csp"
+    "prismjs": "1.11.0"
   }
 }
