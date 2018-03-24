@@ -7,7 +7,7 @@
     "url": "https://github.com/unexpectedjs/magicpen-prism.git"
   },
   "main": "lib/magicPenPrism.js",
-  "author": "Andreas Lind <andreas@one.com>",
+  "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
   "devDependencies": {
     "browserify": "13.0.0",
     "bundle-collapser": "1.2.1",
