@@ -31,7 +31,7 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint . && prettier --check '**/*.js'",
-    "travis": "npm run lint && npm test",
+    "ci": "npm run lint && npm test",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js"
   },
   "dependencies": {
