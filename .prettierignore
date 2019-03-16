@@ -1,5 +1,6 @@
 /3rdparty/
-/node_modules/
 /coverage/
 /magicPenPrism.min.js
-/.nyc_output/
+
+# Don't fight npm i --save
+/package.json
