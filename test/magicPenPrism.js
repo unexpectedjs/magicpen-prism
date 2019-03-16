@@ -1,6 +1,6 @@
-var expect = require('unexpected'),
-    magicPenPrism = require('../lib/magicPenPrism'),
-    MagicPen = require('magicpen');
+var expect = require('unexpected');
+    var magicPenPrism = require('../lib/magicPenPrism');
+    var MagicPen = require('magicpen');
 
 describe('magicpen-prism', function () {
     var magicPen;
