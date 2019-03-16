@@ -1,2 +1,4 @@
 /node_modules/
 /magicPenPrism.min.js
+/.nyc_output/
+/coverage/

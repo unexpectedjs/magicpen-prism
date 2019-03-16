@@ -21,6 +21,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "magicpen": "^6.0.2",
     "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
     "prettier": "^1.16.4",
     "unexpected": "^11.2.0"
   },
@@ -32,9 +33,15 @@
     "test": "mocha",
     "lint": "eslint . && prettier --check '**/*.js'",
     "ci": "npm run lint && npm test",
-    "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js"
+    "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html"
   },
   "dependencies": {
     "prismjs": "^1.15.0"
+  },
+  "nyc": {
+    "include": [
+      "lib/**"
+    ]
   }
 }
