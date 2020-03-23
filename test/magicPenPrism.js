@@ -2,13 +2,13 @@ var expect = require('unexpected');
 var magicPenPrism = require('../lib/magicPenPrism');
 var MagicPen = require('magicpen');
 
-describe('magicpen-prism', function() {
+describe('magicpen-prism', function () {
   var magicPen;
-  beforeEach(function() {
+  beforeEach(function () {
     magicPen = new MagicPen().installPlugin(magicPenPrism);
   });
 
-  it('should highlight JavaScript', function() {
+  it('should highlight JavaScript', function () {
     expect(
       magicPen.code('var foo = "bar";', 'javascript').toString('ansi'),
       'to equal',
@@ -16,7 +16,7 @@ describe('magicpen-prism', function() {
     );
   });
 
-  it('should format a multiline JavaScript chunk', function() {
+  it('should format a multiline JavaScript chunk', function () {
     expect(
       magicPen
         .code('var foo = "bar",\n    quux = "baz";', 'javascript')
@@ -26,7 +26,7 @@ describe('magicpen-prism', function() {
     );
   });
 
-  it('should highlight a language containing "+xml" as markup', function() {
+  it('should highlight a language containing "+xml" as markup', function () {
     expect(
       magicPen
         .code(
@@ -48,7 +48,7 @@ describe('magicpen-prism', function() {
     );
   });
 
-  it('should highlight GraphQL', function() {
+  it('should highlight GraphQL', function () {
     expect(
       magicPen
         .code(
@@ -61,7 +61,7 @@ describe('magicpen-prism', function() {
     );
   });
 
-  it('should not touch an unsupported language', function() {
+  it('should not touch an unsupported language', function () {
     expect(
       magicPen.code('var foo = "bar";', 'foobar').toString('ansi'),
       'to equal',
@@ -69,7 +69,7 @@ describe('magicpen-prism', function() {
     );
   });
 
-  it('should highlight C code (using internal mapping)', function() {
+  it('should highlight C code (using internal mapping)', function () {
     expect(
       magicPen.code('int main(int argc, char **argv) {}', 'c').toString('ansi'),
       'to equal',
@@ -77,7 +77,7 @@ describe('magicpen-prism', function() {
     );
   });
 
-  it('should highlight a Content-Security-Policy', function() {
+  it('should highlight a Content-Security-Policy', function () {
     expect(
       magicPen
         .code(

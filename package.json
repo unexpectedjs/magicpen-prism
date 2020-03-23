@@ -23,7 +23,7 @@
     "magicpen": "^6.2.1",
     "mocha": "^7.0.0",
     "nyc": "^15.0.0",
-    "prettier": "~1.19.1",
+    "prettier": "~2.0.1",
     "unexpected": "^11.12.1"
   },
   "files": [
@@ -33,7 +33,7 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint . && prettier --check '**/*.js'",
-    "ci": "npm run lint && npm run coverage",
+    "test:ci": "npm run coverage",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/magicPenPrism -s magicPenPrism > magicPenPrism.min.js",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html"
   },
