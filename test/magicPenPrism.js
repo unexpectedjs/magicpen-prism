@@ -26,6 +26,16 @@ describe('magicpen-prism', function () {
     );
   });
 
+  it('should highlight jsx', function () {
+    expect(
+      magicPen
+        .code('const foo = <Foo><abc hey="there">foo</abc></Foo>;', 'jsx')
+        .toString('ansi'),
+      'to equal',
+      '\u001b[90m\u001b[38;5;74mconst\u001b[39m foo \u001b[90m\u001b[38;5;180m=\u001b[39m \u001b[90m\u001b[38;5;247m<\u001b[39mFoo\u001b[90m\u001b[38;5;247m><\u001b[39m\u001b[34m\u001b[38;5;162mabc \u001b[39m\u001b[32m\u001b[38;5;112mhey\u001b[39m\u001b[90m\u001b[38;5;247m="\u001b[39m\u001b[90m\u001b[38;5;74mthere\u001b[39m\u001b[90m\u001b[38;5;247m">\u001b[39mfoo\u001b[90m\u001b[38;5;247m</\u001b[39m\u001b[34m\u001b[38;5;162mabc\u001b[39m\u001b[90m\u001b[38;5;247m></\u001b[39mFoo\u001b[90m\u001b[38;5;247m>;\u001b[39m'
+    );
+  });
+
   it('should highlight a language containing "+xml" as markup', function () {
     expect(
       magicPen
