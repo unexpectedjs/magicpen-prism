@@ -67,7 +67,7 @@ describe('magicpen-prism', function () {
         )
         .toString('ansi'),
       'to equal',
-      '\x1b[90m\x1b[38;5;247m{\x1b[39m myQuery\x1b[90m\x1b[38;5;247m(\x1b[39m\x1b[32m\x1b[38;5;112mfirst\x1b[39m\x1b[90m\x1b[38;5;247m:\x1b[39m \x1b[34m\x1b[38;5;162m5\x1b[39m\x1b[90m\x1b[38;5;247m)\x1b[39m \x1b[90m\x1b[38;5;247m{\x1b[39m \x1b[90m\x1b[38;5;180m...\x1b[39m\x1b[90m\x1b[38;5;74mon\x1b[39m MyPreferredType \x1b[90m\x1b[38;5;247m{\x1b[39m isAwesome \x1b[90m\x1b[38;5;247m}\x1b[39m \x1b[90m\x1b[38;5;247m}\x1b[39m \x1b[90m\x1b[38;5;247m}\x1b[39m'
+      '\x1b[90m\x1b[38;5;247m{\x1b[39m myQuery\x1b[90m\x1b[38;5;247m(\x1b[39m\x1b[32m\x1b[38;5;112mfirst\x1b[39m\x1b[90m\x1b[38;5;247m:\x1b[39m \x1b[34m\x1b[38;5;162m5\x1b[39m\x1b[90m\x1b[38;5;247m)\x1b[39m \x1b[90m\x1b[38;5;247m{\x1b[39m \x1b[90m\x1b[38;5;180m...\x1b[39m\x1b[90m\x1b[38;5;74mon\x1b[39m MyPreferredType \x1b[90m\x1b[38;5;247m{\x1b[39m \x1B[34m\x1B[38;5;162misAwesome\x1B[39m \x1b[90m\x1b[38;5;247m}\x1b[39m \x1b[90m\x1b[38;5;247m}\x1b[39m \x1b[90m\x1b[38;5;247m}\x1b[39m'
     );
   });
 
