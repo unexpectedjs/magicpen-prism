@@ -96,7 +96,7 @@ describe('magicpen-prism', function () {
         )
         .toString('ansi'),
       'to equal',
-      "\x1b[90m\x1b[38;5;74mscript-src\x1b[39m \x1b[32m\x1b[38;5;112m'self'\x1b[39m https://gofish.dk/ \x1b[31m\x1b[38;5;204m'unsafe-inline'\x1b[39m; \x1b[90m\x1b[38;5;74mdefault-src\x1b[39m \x1b[32m\x1b[38;5;112m'none'\x1b[39m"
+      "\x1b[34m\x1b[38;5;162mscript-src\x1b[39m \x1b[90m\x1b[38;5;74m'self'\x1b[39m \x1b[90m\x1b[38;5;180mhttps://gofish.dk/\x1b[39m \x1b[90m\x1b[38;5;74m'unsafe-inline'\x1b[39m\x1b[90m\x1b[38;5;247m;\x1b[39m \x1b[34m\x1b[38;5;162mdefault-src\x1b[39m \x1b[90m\x1b[38;5;74m'none'\x1B[39m"
     );
   });
 });
