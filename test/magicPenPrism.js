@@ -1,9 +1,9 @@
-var expect = require('unexpected');
-var magicPenPrism = require('../lib/magicPenPrism');
-var MagicPen = require('magicpen');
+const expect = require('unexpected');
+const magicPenPrism = require('../lib/magicPenPrism');
+const MagicPen = require('magicpen');
 
 describe('magicpen-prism', function () {
-  var magicPen;
+  let magicPen;
   beforeEach(function () {
     magicPen = new MagicPen().installPlugin(magicPenPrism);
   });
