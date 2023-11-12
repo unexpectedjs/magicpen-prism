@@ -40,6 +40,7 @@
   "dependencies": {
     "prismjs": "^1.21.0"
   },
+  "license": "BSD-3-Clause",
   "nyc": {
     "include": [
       "lib/**"
